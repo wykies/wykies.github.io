@@ -24,3 +24,5 @@ highlight_code = false
 
 [extra]
 # Put all your custom variables here
+logo = "NapaLogo.png"
+favicon = "NapaLogo.png"

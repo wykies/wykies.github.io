@@ -10,8 +10,8 @@
     <meta charset="utf-8">
     <!-- base href="http://napa2.wykies.com/" -->
     <meta content="Official website for Wykies Auto Company - Napa" name="description">
-    <meta content="Joomla! - Open Source Content Management" name="generator">
-    <title>Home</title>
+    <link href="{{ get_url(path=config.extra.favicon) | safe }}" rel="icon">
+    <title>{{ config.title }}</title>
     <link href="index_files/font-awesome-5.css" rel="stylesheet">
     <link href="index_files/font-awesome-v4-shims.css" rel="stylesheet">
     <link href="index_files/animate.css" rel="stylesheet">
@@ -87,7 +87,7 @@
                                                                                  rel="home"
                                                                                  target="_self"
                                                                                  title="">
-                        <img alt="" src="index_files/NapaLogo.png">
+                        <img alt="logo" src="{{ get_url(path=config.extra.logo) | safe }}">
                     </a>
                     </div>
                 </div>
@@ -167,7 +167,7 @@
                     <div class="g-content g-particle" id="logo-9571-particle">
                         <a aria-label="" class="g-logo g-logo-helium" href="http://napa2.wykies.com/" rel="home"
                            target="_self" title="">
-                            <img alt="" src="index_files/NapaLogo.png">
+                            <img alt="logo" src="{{ get_url(path=config.extra.logo) | safe }}">
                         </a>
                     </div>
                 </div>
