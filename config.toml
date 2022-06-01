@@ -2,6 +2,11 @@
 #base_url = "https://wykies.com/"
 base_url = "https://wykies.github.io/"
 
+
+# The site title and description; used in feeds by default.
+title = "Wykies"
+#description = ""
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
