@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<html class="g-offcanvas-css3" dir="ltr" lang="en-GB">
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
-
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-
-
-    <meta charset="utf-8">
-    <!-- base href="http://napa2.wykies.com/" -->
-    <meta content="Official website for Wykies Auto Company - Napa" name="description">
     <link href="{{ get_url(path=config.extra.favicon) | safe }}" rel="icon">
-    <title>{{ config.title }}</title>
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+    <link rel="stylesheet" href="{{ get_url(path="main.css") | safe }}">
+
     <link href="index_files/font-awesome-5.css" rel="stylesheet">
     <link href="index_files/font-awesome-v4-shims.css" rel="stylesheet">
     <link href="index_files/animate.css" rel="stylesheet">
