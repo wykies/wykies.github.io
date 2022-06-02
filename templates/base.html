@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="https://wykies.github.io/NapaLogo.png" rel="icon">
-    <title>Wykies</title>
-    <link href="https://wykies.github.io/main.css" rel="stylesheet">
+    <link href="{{ get_url(path=config.extra.favicon) | safe }}" rel="icon">
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+    <link href="{{ get_url(path='main.css') | safe }}" rel="stylesheet">
 </head>
 
 <body>
@@ -29,9 +29,8 @@
     </header>
 
 <section id="content">
-    
-CONTENT
-
+    {% block content %}
+    {% endblock content %}
 </section>
 
 <footer>
