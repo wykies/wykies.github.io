@@ -6,174 +6,22 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="{{ get_url(path=config.extra.favicon) | safe }}" rel="icon">
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
-    <link rel="stylesheet" href="{{ get_url(path="main.css") | safe }}">
-
-    <link href="index_files/nucleus.css" rel="stylesheet">
-    <link href="index_files/helium_14.css" rel="stylesheet">
+    <link href="{{ get_url(path='main.css') | safe }}" rel="stylesheet">
 </head>
 
 <body>
 
-<div id="g-page-surround">
-    <div class="g-menu-overlay"></div>
-    <div aria-controls="g-offcanvas" aria-expanded="false" class="g-offcanvas-hide g-offcanvas-toggle"
-         data-offcanvas-toggle="" role="navigation"><i class="fa fa-fw fa-bars"></i></div>
+<header>
+    here
+</header>
 
+<section id="content">
+    {% block content %}
+    {% endblock content %}
+</section>
 
-    <section id="g-navigation">
-        <div class="g-container">
-            <div class="g-grid">
-
-                <div class="g-block size-100">
-                    <div class="g-system-messages">
-                        <div id="system-message-container">
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-            <div class="g-grid">
-                <div class="g-block size-25">
-                    <div class="g-content g-particle" id="logo-9608-particle"><a aria-label=""
-                                                                                 class="g-logo g-logo-helium"
-                                                                                 href="http://napa2.wykies.com/"
-                                                                                 rel="home"
-                                                                                 target="_self"
-                                                                                 title="">
-                        <img alt="logo" src="{{ get_url(path=config.extra.logo) | safe }}">
-                    </a>
-                    </div>
-                </div>
-
-
-                <div class="g-block size-75">
-                    <div class="g-content g-particle" id="menu-6409-particle">
-                        <nav class="g-main-nav" data-g-hover-expand="true">
-                            <ul class="g-toplevel">
-                                <li class="active g-menu-item g-menu-item-101 g-menu-item-type-component g-standard">
-                                    <a class="g-menu-item-container" href="http://napa2.wykies.com/index.php"> <span
-                                            class="g-menu-item-content"> <span
-                                            class="g-menu-item-title">Home</span> </span>
-                                    </a>
-                                </li>
-
-                                <li class="g-menu-item g-menu-item-type-component g-menu-item-137 g-standard  ">
-                                    <a class="g-menu-item-container" href="http://napa2.wykies.com/index.php/page-2">
-                                        <span class="g-menu-item-content"> <span
-                                                class="g-menu-item-title">Find us</span> </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-    <section class="g-wrapper" id="g-container-main">
-        <div class="g-container">
-            <div class="g-grid">
-
-                <div class="g-block size-100">
-                    <main id="g-mainbar">
-                        <div class="g-grid">
-
-                            <div class="g-block size-100">
-                                <div class="g-content">
-                                    <div class="platform-content row-fluid">
-                                        <div class="span12">
-                                            <div class="sp-page-builder  page-3" id="sp-page-builder">
-
-
-                                                <div class="page-content">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </main>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section>
-        {% block content %}
-        {% endblock content %}
-    </section>
-
-
-    <footer id="g-footer">
-        <div class="g-container">
-            <div class="g-grid">
-
-                <div class="g-block size-10">
-                    <div class="g-content g-particle" id="logo-9571-particle">
-                        <a aria-label="" class="g-logo g-logo-helium" href="http://napa2.wykies.com/" rel="home"
-                           target="_self" title="">
-                            <img alt="logo" src="{{ get_url(path=config.extra.logo) | safe }}">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="g-block size-20">
-                    <div class="g-content g-particle" id="copyright-1736-particle">
-                        <div class="g-copyright ">
-                            © Wykies Auto Company 2017 - 2022
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="g-block size-45">
-                    <div class="g-content g-particle" id="menu-7163-particle">
-                        <nav class="g-main-nav" data-g-hover-expand="true">
-                            <ul class="g-toplevel">
-
-                                <li class="g-menu-item g-menu-item-type-component g-menu-item-101 active g-standard  ">
-                                    <a class="g-menu-item-container" href="http://napa2.wykies.com/index.php">
-                                        <span class="g-menu-item-content"><span
-                                                class="g-menu-item-title">Home</span>
-                                        </span>
-                                    </a>
-                                </li>
-
-                                <li class="g-menu-item g-menu-item-type-component g-menu-item-137 g-standard  ">
-                                    <a class="g-menu-item-container" href="http://napa2.wykies.com/index.php/page-2">
-                                        <span class="g-menu-item-content">
-                                            <span class="g-menu-item-title">Find us</span>
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-
-                <div class="g-block size-25">
-                    <div class="g-content g-particle" id="totop-8670-particle">
-                        <div class="">
-                            <div class="g-totop">
-                                <a aria-label="Back to top" href="#" id="g-totop" rel="nofollow" title="Back to top">
-                                    Back to top <i class="fa fa-chevron-up fa-fw"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-</div>
-
+<footer>
+    Footer
+</footer>
 </body>
 </html>
