@@ -1,10 +1,13 @@
-
+.top-bar {
+    padding: 5px;
+    background-color: #001489;
+}
 
 nav {
-    margin: 27px auto 0;
+    overflow:auto;
+    padding: 5px;
     position: relative;
-    background-color: #001489;
-    border-radius: 8px;
+    background-color: #ffc72c;
     font-size: 0;
 }
 
@@ -18,7 +21,7 @@ nav {
         text-decoration: none;
         text-transform: uppercase;
         text-align: center;
-        color: white;
+        color: #001489;
         cursor: pointer;
     }
 
@@ -28,7 +31,7 @@ nav {
         top: 0;
         z-index: 0;
         transition: all .5s ease 0s;
-        border-radius: 8px;
+
     }
 
 a:nth-child(1) {
@@ -43,40 +46,64 @@ a:nth-child(2) {
 nav .start-home, a:nth-child(1):hover ~ .animation {
     width: 100px;
     left: 0;
-    background-color: #ffc72c;
-   
+    background-color: #ecf0f1;
 }
 
 nav .start-contactus, a:nth-child(2):hover ~ .animation {
     width: 110px;
     left: 100px;
-    background-color: #ffc72c;
-    
+    background-color: #ecf0f1;
 }
 
+.gallery{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    margin: 0 auto 0;
+    box-sizing: border-box;
+}
+
+.image-box{
+    margin:0 1%;
+}
+
+.image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 body {
-    font-size: 12px;
-    font-family: sans-serif;
-    background: #fff
-}
 
+    font-size: 12px;
+    font-family: 'BebasNeueRegular';
+    background: #ecf0f1;
+}
+.content {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+    overflow: hidden;
+}
 h1 {
-    text-align: center;
     margin: 40px 0 40px;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     color: #ecf0f1;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 4px 4px 8px black;
     font-family: 'BebasNeueRegular';
 }
+.logo {
+    float: left;
+}
+
 
 p {
     position: absolute;
     bottom: 20px;
     width: 100%;
     text-align: center;
-    color: #ecf0f1;
+    color: black;
     font-family: 'BebasNeueRegular';
     font-size: 16px;
 }
