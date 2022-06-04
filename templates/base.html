@@ -13,13 +13,13 @@
 <header>
     <div class="top-bar">
         <div class=" logo">
-            <a href="#"><img src="KnowHowLogo-en.svg"/></a>
+            <a href="{{ config.base_url }}"><img src="KnowHowLogo-en.svg"/></a>
         </div>
         <h1> Wykies Auto Company</h1>
     </div>
 
     <nav>
-        <a href="#">Home</a>
+        <a href="{{ config.base_url }}">Home</a>
         <a href="{{get_url(path='contact-us')}}">Contact Us</a>
         <div class="animation start-home"></div>
     </nav>
