@@ -1,10 +1,11 @@
 .top-bar {
     padding: 5px;
     background-color: #001489;
+   
 }
 
 nav {
-    overflow:auto;
+    overflow: auto;
     padding: 5px;
     position: relative;
     background-color: #ffc72c;
@@ -31,7 +32,6 @@ nav {
         top: 0;
         z-index: 0;
         transition: all .5s ease 0s;
-
     }
 
 a:nth-child(1) {
@@ -55,58 +55,35 @@ nav .start-contactus, a:nth-child(2):hover ~ .animation {
     background-color: #ecf0f1;
 }
 
-.gallery{
-    height: 80%;
-    width: 100%;
-    display: flex;
-    margin: 0 auto 0;
-    box-sizing: border-box;
-}
-
-.image-box{
-    margin:0 1%;
-}
-
-.image-box img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 body {
-
     font-size: 12px;
-    font-family: 'BebasNeueRegular';
+    font-family: "Gill Sans", sans-serif;
     background: #ecf0f1;
 }
-.content {
-    float: left;
-    width: 60%;
-    padding: 0 20px;
-    overflow: hidden;
-}
+
 h1 {
     margin: 40px 0 40px;
     text-align: center;
-    font-size: 40px;
+    font-size: 3vw;
     color: #ecf0f1;
-    text-shadow: 4px 4px 8px black;
-    font-family: 'BebasNeueRegular';
+    font-family: "Gill Sans", sans-serif;
 }
+
 .logo {
     float: left;
 }
 
 
 p {
-    overflow: hidden;
     margin: 0px 94px;
     padding: 2px;
     text-align: left;
     color: black;
-    font-family: 'BebasNeueRegular';
+    font-family: "Gill Sans", sans-serif;
     font-size: 16px;
 }
+
 span {
     color: black;
 }
