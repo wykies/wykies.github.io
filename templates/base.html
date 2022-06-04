@@ -3,74 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="{{ get_url(path=config.extra.favicon) | safe }}" rel="icon">
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
     <link href="{{ get_url(path='main.css') | safe }}" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="top-bar">
-            <div class=" logo">
-                <a href="#"><img src="KnowHowLogo-en.svg" /></a>
-            </div>
-            <h1> Wykies Auto Company</h1>
+<header>
+    <div class="top-bar">
+        <div class=" logo">
+            <a href="#"><img src="KnowHowLogo-en.svg"/></a>
         </div>
-
-        <nav>
-            <a href="#">Home</a>
-            <a href="{{get_url(path=contact_us.md)}}">Contact Us</a>
-            <div class="animation start-home"></div>
-        </nav>
-        <!--TODO: Add Store (NAPA Online)-->
-     <!-- <div class="gallery">
-            <div class="image_box">
-                <img src="NAPA-AUTO.jpg" />
-            </div>
-            <div class="image_box">
-                <img src="NAPA-employees.png" />
-            </div>
-            <div class="image_box">
-                <img src="NAPA-store.jpg" />
-            </div>
-        </div>
--->
-        <div class="w3-content w3-section" style="max-width:500px">
-            <img class="mySlides" src="NAPA-AUTO.jpg" style="width:100%">
-            <img class="mySlides" src="NAPA-employees.png" style="width:100%">
-            <img class="mySlides" src="NAPA-store.jpg" style="width:100%">
-        </div>
-
-        <script>
-            var myIndex = 0;
-            carousel();
-
-            function carousel() {
-              var i;
-              var x = document.getElementsByClassName("mySlides");
-              for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-              }
-              myIndex++;
-              if (myIndex > x.length) {myIndex = 1}
-              x[myIndex-1].style.display = "block";
-              setTimeout(carousel, 2000); // Change image every 2 seconds
-            }
-        </script>
-
-    </header>
-
-    <div class="content">
-        {% block content -%}
-        {% endblock content %}
+        <h1> Wykies Auto Company</h1>
     </div>
 
+    <nav>
+        <a href="#">Home</a>
+        <a href="{{get_url(path=contact_us.md)}}">Contact Us</a>
+        <div class="animation start-home"></div>
+    </nav>
+    <!--TODO: Add Store (NAPA Online)-->
+    <!-- <div class="gallery">
+           <div class="image_box">
+               <img src="NAPA-AUTO.jpg" />
+           </div>
+           <div class="image_box">
+               <img src="NAPA-employees.png" />
+           </div>
+           <div class="image_box">
+               <img src="NAPA-store.jpg" />
+           </div>
+       </div>
+-->
+    <div class="w3-content w3-section" style="max-width:500px">
+        <img class="mySlides" src="NAPA-AUTO.jpg" style="width:100%">
+        <img class="mySlides" src="NAPA-employees.png" style="width:100%">
+        <img class="mySlides" src="NAPA-store.jpg" style="width:100%">
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+</header>
+
+<div class="content">
+    {% block content -%}
+    {% endblock content %}
+</div>
 
 
-        <footer>
-            © Wykies Auto Company 2022
-        </footer>
+<footer>
+    © Wykies Auto Company 2022
+</footer>
 
 
 </body>
