@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="w3-content w3-section" style="max-width:100%">
+<div class="photo-section">
     {% set img= resize_image(path='img-1.jpg', width=2400, height=400, op="fill") -%}
-    <img class="mySlides" src="{{ img.url }}" style="width:100%">
+    <img class="mySlides" src="{{ img.url }}">
     {% set img= resize_image(path='img-2.jpg', width=2400, height=400, op="fill") -%}
-    <img class="mySlides" src="{{ img.url }}" style="width:100%">
+    <img class="mySlides" src="{{ img.url }}">
     {% set img= resize_image(path='img-3.jpg', width=2400, height=400, op="fill") -%}
-    <img class="mySlides" src="{{ img.url }}" style="width:100%">
+    <img class="mySlides" src="{{ img.url }}">
     {% set img= resize_image(path='img-4.jpg', width=2400, height=400, op="fill") -%}
-    <img class="mySlides" src="{{ img.url }}" style="width:100%">
+    <img class="mySlides" src="{{ img.url }}">
 </div>
 <script>
     var myIndex = 0;

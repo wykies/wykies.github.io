@@ -2,39 +2,51 @@
 
 
 .top-bar {
-    padding: 5px;
+    padding: .5%;
     background-color: $napaBlue;
+}
+
+.logo {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    margin: 1% 0% 1%;
+    text-align: center;
+    font-size: 3vw;
+    color: $White;
+    font-family: $Font;
 }
 
 nav {
     overflow: auto;
-    padding: 5px;
+    padding: .20%;
     position: relative;
     background-color: $napaYellow;
     font-size: 0;
 }
 
-    nav a {
-        line-height: 50px;
-        height: 100%;
-        font-size: 15px;
-        display: inline-block;
-        position: relative;
-        z-index: 1;
-        text-decoration: none;
-        text-transform: uppercase;
-        text-align: center;
-        color: $napaBlue;
-        cursor: pointer;
-    }
+nav a {
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: $napaBlue;
+    cursor: pointer;
+}
 
-    nav .animation {
-        position: absolute;
-        height: 100%;
-        top: 0;
-        z-index: 0;
-        transition: all .5s ease 0s;
-    }
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+}
 
 a:nth-child(1) {
     width: 100px;
@@ -57,54 +69,15 @@ nav .start-contactus, a:nth-child(2):hover ~ .animation {
     background-color: $White;
 }
 
+.mySlides {
+    width: 100%;
+}
 
 body {
     font-size: 12px;
+    color: black;
     font-family: $Font;
     background: $White;
-}
-
-h1 {
-    margin: 40px 0 40px;
-    text-align: center;
-    font-size: 3vw;
-    color: $White;
-    font-family: $Font;
-}
-
-.logo {
-    float: left;
-}
-
-.gallery {
-    height: 80%;
-    width: 100%;
-    display: flex;
-    margin: 5% auto 0;
-    box-sizing: border-box;
-}
-
-.image-box {
-    margin: 0 1%;
-}
-
-.image-box img {
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-}
-
-p {
-    margin: 0px 94px;
-    padding: 2px;
-    text-align: left;
-    color: black;
-    font-family: $Font;
-    font-size: 16px;
-}
-
-span {
-    color: black;
 }
 
 footer {
@@ -117,6 +90,3 @@ footer {
     color: black;
     text-align: center;
 }
-
-
-
