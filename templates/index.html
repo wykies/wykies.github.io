@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="w3-content w3-section" style="max-width:100%">
-    {% set img= resize_image(path='img-1.jpg', width=150, height=150, op="scale") -%}
+    {% set img= resize_image(path='img-1.jpg', width=2400, height=400, op="fill") -%}
     <img class="mySlides" src="{{ img.url }}" style="width:100%">
-    {% set img= resize_image(path='img-2.jpg', width=150, height=150, op="scale") -%}
+    {% set img= resize_image(path='img-2.jpg', width=2400, height=400, op="fill") -%}
     <img class="mySlides" src="{{ img.url }}" style="width:100%">
-    {% set img= resize_image(path='img-3.jpg', width=150, height=150, op="scale") -%}
+    {% set img= resize_image(path='img-3.jpg', width=2400, height=400, op="fill") -%}
     <img class="mySlides" src="{{ img.url }}" style="width:100%">
-    {% set img= resize_image(path='img-4.jpg', width=150, height=150, op="scale") -%}
+    {% set img= resize_image(path='img-4.jpg', width=2400, height=400, op="fill") -%}
     <img class="mySlides" src="{{ img.url }}" style="width:100%">
 </div>
 <script>
@@ -25,7 +25,7 @@
             myIndex = 1
         }
         x[myIndex - 1].style.display = "block";
-        setTimeout(carousel, 2000); // Change image every 2 seconds
+        setTimeout(carousel, 5000); // Change image every 2 seconds
     }
 </script>
 {{ section.content | safe}}
