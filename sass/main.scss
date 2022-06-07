@@ -1,14 +1,16 @@
+@import "variables";
+
+
 .top-bar {
     padding: 5px;
-    background-color: #001489;
-   
+    background-color: $napaBlue;
 }
 
 nav {
     overflow: auto;
     padding: 5px;
     position: relative;
-    background-color: #ffc72c;
+    background-color: $napaYellow;
     font-size: 0;
 }
 
@@ -22,7 +24,7 @@ nav {
         text-decoration: none;
         text-transform: uppercase;
         text-align: center;
-        color: #001489;
+        color: $napaBlue;
         cursor: pointer;
     }
 
@@ -39,35 +41,35 @@ a:nth-child(1) {
 }
 
 a:nth-child(2) {
-    width: 110px;
+    width: 115px;
 }
 
 
 nav .start-home, a:nth-child(1):hover ~ .animation {
     width: 100px;
     left: 0;
-    background-color: #ecf0f1;
+    background-color: $White;
 }
 
 nav .start-contactus, a:nth-child(2):hover ~ .animation {
-    width: 110px;
+    width: 115px;
     left: 100px;
-    background-color: #ecf0f1;
+    background-color: $White;
 }
 
 
 body {
     font-size: 12px;
-    font-family: "Gill Sans", sans-serif;
-    background: #ecf0f1;
+    font-family: $Font;
+    background: $White;
 }
 
 h1 {
     margin: 40px 0 40px;
     text-align: center;
     font-size: 3vw;
-    color: #ecf0f1;
-    font-family: "Gill Sans", sans-serif;
+    color: $White;
+    font-family: $Font;
 }
 
 .logo {
@@ -80,7 +82,7 @@ p {
     padding: 2px;
     text-align: left;
     color: black;
-    font-family: "Gill Sans", sans-serif;
+    font-family: $Font;
     font-size: 16px;
 }
 
@@ -94,14 +96,10 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #ffc72c;
+    background-color: $napaYellow;
     color: black;
     text-align: center;
 }
 
 
-/*
-#001489
-#ffc72c
-#fff
-*/
+
