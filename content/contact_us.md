@@ -1,36 +1,11 @@
 +++
-title = "Contact Us"
-weight = 100
 +++
+<center>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam varius mi ac tellus efficitur, quis semper sapien
-gravida. Curabitur ac massa accumsan, convallis sapien sit amet, posuere nisi. Pellentesque fermentum erat pretium
-pretium pharetra. Donec sagittis tempor pharetra. Donec rutrum risus id lacus rutrum, a sollicitudin magna consectetur.
-Praesent ornare tortor cursus mi molestie, sit amet tempor nisi hendrerit. Vestibulum pellentesque erat ut nisl laoreet,
-finibus sagittis diam egestas. Cras risus erat, fringilla vitae consequat viverra, bibendum ut augue. Phasellus sit amet
-fringilla urna. Etiam placerat lorem quam, vitae maximus enim elementum non. Interdum et malesuada fames ac ante ipsum
-primis in faucibus. Fusce eleifend non nibh eget molestie.
+| NAPA Branch  |  | Map |
+| ---------------- | -------------------------- | ------------------- |
+| Canefield    | 449-1888, 235-3888, 265-4888, 786-419-4528 |<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3847.7712293736113!2d-61.392597784711604!3d15.334662762775395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c14d44f28670b8d%3A0x947720b9689e5de0!2sWykies%20Auto%20Co-%20Napa!5e0!3m2!1sen!2sdm!4v1654707527643!5m2!1sen!2sdm" width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>|
+| Pottersvile | 449-1513 |<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3848.327062087343!2d-61.393860771663014!3d15.304450929516822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c14d5f0fbb3b3c5%3A0xaf4b8c050c382bc3!2sWykies%20Auto%20Co%20-%20NAPA%20Auto%20Parts%20Pottersville%20Branch!5e0!3m2!1sen!2sdm!4v1654707618054!5m2!1sen!2sdm" width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>|
+| Portsmouth  | 445-5888 |<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3843.3485112002445!2d-61.45821178471011!3d15.57301755667965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c14c9ad1647836b%3A0x1f4a4599edb958d2!2sWykies%20Auto%20Co%20-%20NAPA%20Auto%20Parts%20Portsmouth%20Branch!5e0!3m2!1sen!2sdm!4v1654707648390!5m2!1sen!2sdm" width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> |
 
-Quisque ac augue bibendum, dignissim metus ut, tristique arcu. Nam id dolor tellus. Maecenas placerat sem nec lobortis
-pulvinar. Fusce ultrices ornare sem, at tincidunt augue. In lobortis fringilla ultrices. Nullam hendrerit vitae elit ut
-mattis. Donec elit eros, fringilla et posuere ut, maximus a lectus. Nunc laoreet maximus lectus. In quis sem et odio
-elementum iaculis eu a erat. Vestibulum pulvinar placerat tellus, sed accumsan est hendrerit sit amet. Duis dictum,
-libero nec interdum convallis, ipsum purus fermentum augue, ut placerat ex nisl sit amet dolor. Pellentesque habitant
-morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-
-Vestibulum sed libero in nibh euismod mattis non non neque. Donec vitae ullamcorper est, eu interdum justo. Donec
-euismod quam non turpis varius, ut placerat lorem varius. Mauris a urna id mi auctor aliquet non id justo. Cras eros
-ante, pretium sed mollis eget, consectetur a metus. Donec gravida ac dui at rutrum. Suspendisse ac dapibus urna.
-
-Pellentesque a suscipit urna, in mattis dui. Donec eleifend felis cursus pretium semper. Praesent quis dolor vel lectus
-aliquet molestie quis ut risus. Sed consectetur lectus sit amet nisi lacinia porta. Praesent pulvinar augue quis mi
-semper fringilla. Curabitur suscipit urna lobortis elit tempor dignissim. Quisque maximus venenatis massa ac viverra.
-Praesent vitae dapibus lorem. Aenean lobortis sagittis leo ut rhoncus. Etiam quis libero sollicitudin, dignissim nisl
-commodo, venenatis massa.
-
-Nunc ornare lobortis ex quis consectetur. Donec interdum tempus mi sit amet elementum. Nullam laoreet erat id ligula
-tempus, vel aliquet metus posuere. Curabitur vel ornare lorem. Fusce ut lorem eu ligula tristique varius. Morbi sed mi
-tortor. Phasellus sollicitudin libero nulla. Morbi tristique erat at erat dapibus vestibulum. Ut luctus quam nec diam
-placerat lobortis. Maecenas nec dictum ligula, interdum posuere tellus. Quisque commodo nec diam non dictum. Curabitur
-et nisi quis erat suscipit gravida id et purus.
-**Generated 5 paragraphs, 415 words, 2790 bytes of [Lorem Ipsum](https://www.lipsum.com/)**
+<center>

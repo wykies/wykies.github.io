@@ -8,8 +8,9 @@
 
 .logo {
     float: left;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 200%;
+    padding: .9%;
 }
 
 h1 {
@@ -57,13 +58,13 @@ a:nth-child(2) {
 }
 
 
-nav .start-home, a:nth-child(1):hover ~ .animation {
+.active nav .start-home, a:nth-child(1):hover ~ .animation {
     width: 100px;
     left: 0;
     background-color: $White;
 }
 
-nav .start-contactus, a:nth-child(2):hover ~ .animation {
+.active nav .start-contactus, a:nth-child(2):hover ~ .animation {
     width: 115px;
     left: 100px;
     background-color: $White;
@@ -73,14 +74,49 @@ nav .start-contactus, a:nth-child(2):hover ~ .animation {
     width: 100%;
 }
 
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        
+    }
+}
+
+h2{
+    color:$White;
+    font:$Font
+}
+
+table {
+    text-align: left;
+    overflow-x:auto;
+    background: $napaYellow;
+    
+}
+
 body {
-    font-size: 12px;
-    color: black;
+    font-size: 25px;
+    color: $napaBlue;
     font-family: $Font;
-    background: $White;
+    background: $napaBlue;
 }
 
 footer {
+    font-size: 12px;
     position: fixed;
     padding: 3px 15px;
     left: 0;
