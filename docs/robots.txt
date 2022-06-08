@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wykies.github.io/sitemap.xml
