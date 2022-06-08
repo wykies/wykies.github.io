@@ -9,7 +9,7 @@
 .logo {
     float: left;
     width: auto;
-    height: 200%;
+    height: 100%;
     padding: .9%;
 }
 
@@ -71,7 +71,9 @@ a:nth-child(2) {
 }
 
 .mySlides {
+    
     width: 100%;
+  
 }
 
 .fade {
@@ -89,13 +91,6 @@ a:nth-child(2) {
     }
 }
 
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-        
-    }
-}
-
 h2{
     color:$White;
     font:$Font
@@ -104,15 +99,16 @@ h2{
 table {
     text-align: left;
     overflow-x:auto;
-    background: $napaYellow;
+    background: $napaBlue;
     
 }
 
 body {
     font-size: 25px;
-    color: $napaBlue;
+    color: $White;
     font-family: $Font;
     background: $napaBlue;
+    position:center;
 }
 
 footer {
