@@ -17,6 +17,7 @@ jobs:
       - name: Build only
         uses: wykies/zola-deploy-action@master
         env:
+          OUT_DIR: docs
           BUILD_DIR: .
           BUILD_ONLY: true
           BUILD_FLAGS: --drafts
@@ -31,6 +32,7 @@ jobs:
       - name: Build and deploy
         uses: wykies/zola-deploy-action@master
         env:
+          OUT_DIR: docs
           BUILD_DIR: .
           PAGES_BRANCH: gh-pages
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -44,6 +46,7 @@ jobs:
       - name: Build and deploy
         uses: wykies/zola-deploy-action@master
         env:
+          OUT_DIR: docs
           BUILD_DIR: .
           PAGES_BRANCH: gh-pages
           REPOSITORY: wykies/web_test
