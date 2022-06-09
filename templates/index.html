@@ -20,24 +20,9 @@
     {% set img= resize_image(path='NAPA3.jpg', width=2400, height=1600, op="fill") -%}
     <img class="mySlides fade" src="{{ img.url }}">
 </div>
-<script>
-    // TODO move script into js.js code to pull in in bottom of index.html in template (less defer)
-    var myIndex = 0;
-    carousel();
 
-    function carousel() {
-        var i; // TODO: Replace var with let
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        myIndex++;
-        if (myIndex > x.length) {
-            myIndex = 1
-        }
-        x[myIndex - 1].style.display = "block";
-        setTimeout(carousel, 10000); // TODO: Move delay to file with configs
-    }
-</script>
+<script defer src="{{ get_url(path='js.js') | safe }}" type="text/javascript"></script>
+
 {{ section.content | safe}}
+
 {% endblock content %}

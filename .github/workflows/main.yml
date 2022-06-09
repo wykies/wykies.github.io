@@ -6,6 +6,9 @@ on:
       - main
       - develop
   pull_request:
+    branches:
+      - main
+      - develop
 
 jobs:
   build:
@@ -48,7 +51,7 @@ jobs:
         env:
           OUT_DIR: docs
           BUILD_DIR: .
-          PAGES_BRANCH: gh-pages
-          REPOSITORY: wykies/web_test
+          PAGES_BRANCH: gh-pages-test
+          # REPOSITORY: wykies/web_test
           BUILD_FLAGS: --base-url https://wykies.github.io/web_test/
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
