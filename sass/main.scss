@@ -96,31 +96,55 @@ h2{
     font:$Font
 }
 
-table {
-    text-align: left;
-    overflow-x:auto;
-    background: $White;
-    padding: 1% 5% 1% 5%;
-  
+.table_ {
+    box-sizing: border-box;
+    padding-left:3.5%;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 5%; 
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 30%;
+    padding: 10px;
    
 }
-.full_height{
 
-    background: green;
-    height:100%;
-}
-th, td {
-    padding: 20px;
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-div.container {
-   position: center;
-   padding-left: 2%;
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        height:100%;
+    }
 }
 
 body {
     font-size: 25px;
-    color: $napaBlue;
+    color: $White;
     font-family: $Font;
     background: $napaBlue;
     position:center;
