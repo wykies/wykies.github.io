@@ -28,7 +28,7 @@
     carousel();
 
     function carousel() {
-        var i;
+        var i; // TODO: Replace var with let
         var x = document.getElementsByClassName("mySlides");
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
@@ -38,7 +38,7 @@
             myIndex = 1
         }
         x[myIndex - 1].style.display = "block";
-        setTimeout(carousel, 10000);
+        setTimeout(carousel, 10000); // TODO: Move delay to file with configs
     }
 </script>
 {{ section.content | safe}}
