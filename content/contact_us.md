@@ -2,17 +2,5 @@
 title='Contact Us'
 weight=200
 +++
-<div class="full_height">
 
-[//]: # (TODO center tag is deprecated please change. Not sure what it was replaced with but maybe use a div and set a 
-            class that the CSS will center)
-
-[//]: # (TODO We should add the opening hours of each branch &#40;not sure yet what is the best way to put it in&#41; )
-
-| Branch |Hours |  | Map |
-| ------- |-| -| --- |
-| Canefield |{{hours()}}| {{canefieldpn()}} | <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3847.7712293736113!2d-61.392597784711604!3d15.334662762775395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c14d44f28670b8d%3A0x947720b9689e5de0!2sWykies%20Auto%20Co-%20Napa!5e0!3m2!1sen!2sdm!4v1654707527643!5m2!1sen!2sdm" width="550" height="25%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>|
-| Portsmouth |{{hourspm()}}| 767-445-5888 | <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3843.3485112002445!2d-61.45821178471011!3d15.57301755667965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c14c9ad1647836b%3A0x1f4a4599edb958d2!2sWykies%20Auto%20Co%20-%20NAPA%20Auto%20Parts%20Portsmouth%20Branch!5e0!3m2!1sen!2sdm!4v1654707648390!5m2!1sen!2sdm" width="550" height="25%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> |
-| Pottersville |{{hours()}}| 767-449-1513 | <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3848.327062087343!2d-61.393860771663014!3d15.304450929516822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c14d5f0fbb3b3c5%3A0xaf4b8c050c382bc3!2sWykies%20Auto%20Co%20-%20NAPA%20Auto%20Parts%20Pottersville%20Branch!5e0!3m2!1sen!2sdm!4v1654707618054!5m2!1sen!2sdm" width="550" height="25%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>|
-
-</div>
+{{table()}}
