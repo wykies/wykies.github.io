@@ -7,10 +7,10 @@
 }
 
 .logo {
+    max-width:100%;
+    height: auto;
     float: left;
-    width: auto;
-    height: 100%;
-    padding: .9%;
+   
 }
 
 h1 {
@@ -71,9 +71,9 @@ a:nth-child(2) {
 }
 
 .mySlides {
-    
-    width: 100%;
-  
+    width: 80%;
+    position:center;
+    padding-left:10%;
 }
 
 .fade {
@@ -99,13 +99,28 @@ h2{
 table {
     text-align: left;
     overflow-x:auto;
-    background: $napaBlue;
-    
+    background: $White;
+    padding: 1% 5% 1% 5%;
+  
+   
+}
+.full_height{
+
+    background: green;
+    height:100%;
+}
+th, td {
+    padding: 20px;
+}
+
+div.container {
+   position: center;
+   padding-left: 2%;
 }
 
 body {
     font-size: 25px;
-    color: $White;
+    color: $napaBlue;
     font-family: $Font;
     background: $napaBlue;
     position:center;
