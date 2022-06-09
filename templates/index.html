@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="photo-section">
-
     {% set img= resize_image(path='NAPABuilding.jpg', width=2400, height=1600, op="fill") -%}
     <img class="mySlides fade" src="{{ img.url }}">
     {% set img= resize_image(path='NAPA.jpg', width=2400, height=1600, op="fill") -%}
@@ -20,8 +19,6 @@
     <img class="mySlides fade" src="{{ img.url }}">
     {% set img= resize_image(path='NAPA3.jpg', width=2400, height=1600, op="fill") -%}
     <img class="mySlides fade" src="{{ img.url }}">
-
-
 </div>
 <script>
     // TODO move script into js.js code to pull in in bottom of index.html in template (less defer)
