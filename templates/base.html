@@ -5,21 +5,24 @@
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="{{ get_url(path=config.extra.favicon) | safe }}" rel="icon">
+    <!-- TODO Restore missing favorite icon-->
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
     <link href="{{ get_url(path='main.css') | safe }}" rel="stylesheet">
 </head>
 
 <body>
+<!-- TODO Make header stay visible at top of page-->
 <header>
     <div class=" logo">
-        <a href="{{ config.base_url | safe}}"><img src="{{ get_url(path=config.extra.logo) }}"/></a>
+        <a href="{{ config.base_url | safe }}"><img src="{{ get_url(path=config.extra.logo) }}"/></a>
     </div>
     <div class="top-bar">
         <h1> Wykies Auto Company</h1>
+        <!-- TODO Set min size for heading-->
     </div>
     <nav>
         <a href="{{ config.base_url | safe}}"><b>Home</b></a>
-        <a href="{{get_url(path='contact-us')}}"><b>Contact Us</b></a>
+        <a href="{{ get_url(path='contact-us') }}"><b>Contact Us</b></a>
         <div class="animation start-home"></div>
     </nav>
     <!--TODO: Add Store (NAPA Online)-->
