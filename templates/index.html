@@ -21,8 +21,8 @@
     <img class="mySlides fade" src="{{ img.url }}">
 </div>
 
-<script defer src="{{ get_url(path='js.js') | safe }}" type="text/javascript"></script>
-
 {{ section.content | safe}}
+
+<script defer src="{{ get_url(path='js.js') | safe }}" type="text/javascript"></script>
 
 {% endblock content %}
