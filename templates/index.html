@@ -1,28 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="photo-section">
-    {% set img= resize_image(path='NAPABuilding.jpg', width=2400, height=1600, op="fill") -%}
-    <img class="mySlides fade" src="{{ img.url }}">
-    {% set img= resize_image(path='NAPA.jpg', width=2400, height=1600, op="fill") -%}
-    <img class="mySlides fade" src="{{ img.url }}">
-    {% set img= resize_image(path='NAPARepair.jpg', width=2400, height=1600, op="fill") -%}
-    <img class="mySlides fade" src="{{ img.url }}">
-    {% set img= resize_image(path='NAPACar.jpg', width=2400, height=1600, op="fill") -%}
-    <img class="mySlides fade" src="{{ img.url }}">
-    {% set img= resize_image(path='NAPA2.jpg', width=2400, height=1600, op="fill") -%}
-    <img class="mySlides fade" src="{{ img.url }}">
-    {% set img= resize_image(path='NAPABuilding2.jpg', width=2400, height=1600, op="fill") -%}
-    <img class="mySlides fade" src="{{ img.url }}">
-    {% set img= resize_image(path='NAPAAutopro.jpg', width=2400, height=1600, op="fill") -%}
-    <img class="mySlides fade" src="{{ img.url }}">
-    {% set img= resize_image(path='True.jpg', width=2400, height=1600, op="fill") -%}
-    <img class="mySlides fade" src="{{ img.url }}">
-    {% set img= resize_image(path='NAPA3.jpg', width=2400, height=1600, op="fill") -%}
-    <img class="mySlides fade" src="{{ img.url }}">
+    <!--TODO 3: Go over image selection with Yomi -->
+    <!-- TODO 4: Add next and previous buttons for image change (buttons could appear on hover prev on the left and next on the right)-->
+    <!-- TODO 5: Find better way to set range end value than hard coding it -->
+    {% for i in range(end=9) %}
+    {% if i < 10 %}
+    {% set img_num = '0' ~ i | as_str %}
+    {% else %}
+    {% set img_num = i | as_str%}
+    {% endif %}
+    {% set img_fn = 'NAPA' ~ img_num ~ '.jpg' %}
+    {% set img = resize_image(path=img_fn, width=2400, height=1400, op="fill") -%}
+    <img alt="banner image" class="mySlides fade" src="{{ img.url }}">
+    <!-- TODO 4: Fix images taking more than height between header and footer when window is wider than it is tall
+            see: https://cdn.discordapp.com/attachments/979068259380903986/985449018480021534/scrshot.png -->
+    {% endfor %}
 </div>
 
-<script defer src="{{ get_url(path='js.js') | safe }}" type="text/javascript"></script>
-
 {{ section.content | safe}}
+
+<script defer src="{{ get_url(path='js.js') | safe }}" type="text/javascript"></script>
 
 {% endblock content %}
