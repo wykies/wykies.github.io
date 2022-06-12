@@ -2,26 +2,18 @@
 {% block content %}
 <div class="photo-section">
     <!--TODO 3: Go over image selection with Yomi -->
-    <!-- TODO 4: Change images load to a loop -->
     <!-- TODO 4: Add next and previous buttons for image change (buttons could appear on hover prev on the left and next on the right)-->
-    {% set img= resize_image(path='NAPA00.jpg', width=2400, height=1400, op="fill") -%}
-    <img class="mySlides fade" src="{{ img.url }}">
-    {% set img= resize_image(path='NAPA01.jpg', width=2400, height=1400, op="fill") -%}
-    <img class="mySlides fade" src="{{ img.url }}">
-    {% set img= resize_image(path='NAPA02.jpg', width=2400, height=1400, op="fill") -%}
-    <img class="mySlides fade" src="{{ img.url }}">
-    {% set img= resize_image(path='NAPA03.jpg', width=2400, height=1400, op="fill") -%}
-    <img class="mySlides fade" src="{{ img.url }}">
-    {% set img= resize_image(path='NAPA04.jpg', width=2400, height=1400, op="fill") -%}
-    <img class="mySlides fade" src="{{ img.url }}">
-    {% set img= resize_image(path='NAPA05.jpg', width=2400, height=1400, op="fill") -%}
-    <img class="mySlides fade" src="{{ img.url }}">
-    {% set img= resize_image(path='NAPA06.jpg', width=2400, height=1400, op="fill") -%}
-    <img class="mySlides fade" src="{{ img.url }}">
-    {% set img= resize_image(path='NAPA07.jpg', width=2400, height=1400, op="fill") -%}
-    <img class="mySlides fade" src="{{ img.url }}">
-    {% set img= resize_image(path='NAPA08.jpg', width=2400, height=1400, op="fill") -%}
-    <img class="mySlides fade" src="{{ img.url }}">
+    <!-- TODO 5: Find better way to set range end value than hard coding it -->
+    {% for i in range(end=10) %}
+    {% if i < 10 %}
+    {% set img_num = '0' ~ i | as_str %}
+    {% else %}
+    {% set img_num = i | as_str%}
+    {% endif %}
+    {% set img_fn = 'NAPA' ~ img_num ~ '.jpg' %}
+    {% set img = resize_image(path=img_fn, width=2400, height=1400, op="fill") -%}
+    <img alt="banner image" class="mySlides fade" src="{{ img.url }}">
+    {% endfor %}
 </div>
 
 {{ section.content | safe}}
