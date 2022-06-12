@@ -5,28 +5,28 @@
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="{{ get_url(path=config.extra.favicon) | safe }}" rel="icon">
-    <!-- TODO Restore missing favorite icon-->
+    <!-- TODO 1: Restore missing favorite icon-->
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
     <link href="{{ get_url(path='main.css') | safe }}" rel="stylesheet">
 </head>
 
-<!-- TODO Remove padding on sides of body -->
+<!-- TODO 3: Remove padding on sides of body -->
 <body>
-<!-- TODO Make header stay visible at top of page-->
+<!-- TODO 3: Make header stay visible at top of page-->
 <header>
     <div class=" logo">
         <a href="{{ config.base_url | safe }}"><img src="{{ get_url(path=config.extra.logo) }}"/></a>
     </div>
     <div class="top-bar">
         <h1 id="company_name"> Wykies Auto Company</h1>
-        <!-- TODO Set min size for heading-->
+        <!-- TODO 3: Set min size for heading-->
     </div>
     <nav>
         <a href="{{ config.base_url | safe}}"><b>Home</b></a>
         <a href="{{ get_url(path='contact-us') }}"><b>Contact Us</b></a>
         <div class="animation start-home"></div>
     </nav>
-    <!--TODO: Add Store (NAPA Online)-->
+    <!--TODO 4: Add Store (NAPA Online)-->
 </header>
 
 <div class="content">
