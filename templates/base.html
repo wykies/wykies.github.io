@@ -10,6 +10,7 @@
     <link href="{{ get_url(path='main.css') | safe }}" rel="stylesheet">
 </head>
 
+<!-- TODO Remove padding on sides of body -->
 <body>
 <!-- TODO Make header stay visible at top of page-->
 <header>
@@ -17,7 +18,7 @@
         <a href="{{ config.base_url | safe }}"><img src="{{ get_url(path=config.extra.logo) }}"/></a>
     </div>
     <div class="top-bar">
-        <h1> Wykies Auto Company</h1>
+        <h1 id="company_name"> Wykies Auto Company</h1>
         <!-- TODO Set min size for heading-->
     </div>
     <nav>
