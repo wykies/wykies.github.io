@@ -13,6 +13,8 @@
     {% set img_fn = 'NAPA' ~ img_num ~ '.jpg' %}
     {% set img = resize_image(path=img_fn, width=2400, height=1400, op="fill") -%}
     <img alt="banner image" class="mySlides fade" src="{{ img.url }}">
+    <!-- TODO 4: Fix images taking more than height between header and footer when window is wider than it is tall
+            see: https://cdn.discordapp.com/attachments/979068259380903986/985449018480021534/scrshot.png -->
     {% endfor %}
 </div>
 
