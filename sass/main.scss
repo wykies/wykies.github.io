@@ -1,9 +1,14 @@
 @import "variables";
 
 
-.top-bar {
+#org_name {
   padding: .5%;
   background-color: $napaBlue;
+  margin: 0;
+  text-align: center;
+  font-size: 3vw;
+  color: $White;
+  font-family: $Font;
 }
 
 .logo {
@@ -12,12 +17,16 @@
   float: left;
 }
 
-#company_name {
-  margin: 0;
-  text-align: center;
-  font-size: 3vw;
-  color: $White;
-  font-family: $Font;
+@media screen and (max-width: 1325px) {
+  #org_name {
+    font-size: 46px; // Stop Org name getting too small and messing up nav
+  }
+}
+
+@media screen and (max-width: 765px) {
+  #org_type {
+    display: none; // Remove the word company when there is not enough space
+  }
 }
 
 nav {
@@ -25,7 +34,7 @@ nav {
   padding: .20%;
   position: relative;
   background-color: $napaYellow;
-  font-size: 0;
+  font-size: 0; // TODO 4:Determine why font is set to 0
 }
 
 nav a {
