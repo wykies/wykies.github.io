@@ -1,5 +1,9 @@
 @import "variables";
 
+header {
+    position: sticky;
+    top: 0;
+}
 
 #org_name {
   padding: .5%;
