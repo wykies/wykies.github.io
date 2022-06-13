@@ -82,10 +82,19 @@ a:nth-child(2) {
   position: center;
 
 }
+//For wider screens view
+@media screen and (max-height: 850px){
+    .mySlides{
+        max-height:425px;
+        max-width:50%;
+        padding-left:25%;
+    }
+
+}
 
 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade {
