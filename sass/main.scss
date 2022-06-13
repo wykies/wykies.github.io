@@ -10,21 +10,16 @@ header {
   background-color: $napaBlue;
   margin: 0;
   text-align: center;
-  font-size: 3vw;
+  font-size: 52px;
   color: $White;
   font-family: $Font;
 }
 
-.logo {
-  max-width: 100%;
-  height: auto;
-  float: left;
-}
-
-@media screen and (max-width: 1325px) {
-  #org_name {
-    font-size: 46px; // Stop Org name getting too small and messing up nav
-  }
+#logoimg {
+    float: left;
+    margin: 5px 0 0 5px;
+    max-width: 100%;
+    height: auto;
 }
 
 @media screen and (max-width: 765px) {
