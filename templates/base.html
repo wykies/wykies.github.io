@@ -11,7 +11,7 @@
 <body>
 <header>
     <div>
-        <!-- TODO 3: Make logo resize with page (lower min org name size might also be possible once this is implemented-->
+        <!-- TODO 4: Make logo resize with page (lower min org name size might also be possible once this is implemented-->
         <div class=" logo">
             <a href="{{ config.base_url | safe }}"><img id="logoimg" src="{{ get_url(path=config.extra.logo) }}"/></a>
         </div>
@@ -22,6 +22,7 @@
     </div>
     <div>
         <nav>
+            <!--TODO 4: Highlight current page in nav-->
             <a href="{{ config.base_url | safe}}"><b>Home</b></a>
             <a href="{{ get_url(path='contact-us') }}"><b>Contact Us</b></a>
             <div class="animation start-home"></div>
