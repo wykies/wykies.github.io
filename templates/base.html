@@ -8,15 +8,12 @@
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
     <link href="{{ get_url(path='main.css') | safe }}" rel="stylesheet">
 </head>
-
-<!-- TODO 3: Remove padding on sides of body -->
 <body>
-<!-- TODO 3: Make header stay visible at top of page-->
 <header>
     <div>
-        <!-- TODO 3: Make logo resize with page (lower min org name size might also be possible once this is implemented-->
+        <!-- TODO 4: Make logo resize with page (lower min org name size might also be possible once this is implemented-->
         <div class=" logo">
-            <a href="{{ config.base_url | safe }}"><img src="{{ get_url(path=config.extra.logo) }}"/></a>
+            <a href="{{ config.base_url | safe }}"><img id="logoimg" src="{{ get_url(path=config.extra.logo) }}"/></a>
         </div>
         <div id="org_name">
             <span> Wykies&nbsp;Auto</span>
@@ -25,6 +22,7 @@
     </div>
     <div>
         <nav>
+            <!--TODO 4: Highlight current page in nav-->
             <a href="{{ config.base_url | safe}}"><b>Home</b></a>
             <a href="{{ get_url(path='contact-us') }}"><b>Contact Us</b></a>
             <div class="animation start-home"></div>
