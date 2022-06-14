@@ -1,8 +1,8 @@
 @import "variables";
 
 header {
-    position: sticky;
-    top: 0;
+  position: sticky;
+  top: 0;
 }
 
 #org_name {
@@ -16,10 +16,10 @@ header {
 }
 
 #logoimg {
-    float: left;
-    margin: 5px 0 0 5px;
-    max-width: 100%;
-    height: auto;
+  float: left;
+  margin: 5px 0 0 5px;
+  max-width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 765px) {
@@ -82,26 +82,28 @@ a:nth-child(2) {
   position: center;
 
 }
+
 //For wider screens view
-@media screen and (max-height: 850px){
-    .mySlides{
-        max-height:425px;
-        max-width:50%;
-        padding-left:25%;
-    }
+@media screen and (max-height: 850px) {
+  .mySlides {
+    max-height: 425px;
+    max-width: 50%;
+    padding-left: 25%;
+  }
 
 }
+
 //For phone screen view
 @media screen and (max-width: 864px) {
-    .mySlides{
-        max-width:100%;
-        padding: 0;
-    }
+  .mySlides {
+    max-width: 100%;
+    padding: 0;
+  }
 }
 
 .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 @keyframes fade {
@@ -194,7 +196,7 @@ body {
   font-family: $Font;
   background: $napaBlue;
   position: center;
-  margin :0;
+  margin: 0;
 }
 
 footer {
