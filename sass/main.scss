@@ -10,16 +10,21 @@ header {
   background-color: $napaBlue;
   margin: 0;
   text-align: center;
-  font-size: 52px;
+  font-size: 3vw;
   color: $White;
   font-family: $Font;
 }
 
+@media screen and (max-width: 1200px) {
+  #org_name {
+    font-size: 36px; // Set min font size for org_name
+  }
+}
+
 #logo_img {
   float: left;
-  margin: 5px 0 0 5px;
+  margin: 8px;
   max-width: 100%;
-  height: auto;
 }
 
 @media screen and (max-width: 765px) {
@@ -34,6 +39,7 @@ nav {
   position: relative;
   background-color: $napaYellow;
   font-size: 0; // TODO 5:Determine why font is set to 0
+  clear: both;
 }
 
 nav a {
