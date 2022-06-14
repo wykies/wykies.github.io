@@ -22,14 +22,12 @@
             <span id="org_type">Company</span>
         </div>
     </div>
-    <div>
-        <nav>
-            <!--TODO 4: Highlight current page in nav-->
-            <a href="{{ config.base_url | safe}}"><b>Home</b></a>
-            <a href="{{ get_url(path='contact-us') }}"><b>Contact Us</b></a>
-            <div class="animation start-home"></div>
-        </nav>
-    </div>
+    <nav>
+        <!--TODO 4: Highlight current page in nav-->
+        <a href="{{ config.base_url | safe}}"><b>Home</b></a>
+        <a href="{{ get_url(path='contact-us') }}"><b>Contact Us</b></a>
+        <div class="animation start-home"></div>
+    </nav>
     <!--TODO 4: Add Store (NAPA Online)-->
 </header>
 

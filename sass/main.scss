@@ -1,7 +1,7 @@
 @import "variables";
 
 header {
-  position: sticky;
+  position: sticky; // TODO 4: Try absolute still leaves top
   top: 0;
 }
 
