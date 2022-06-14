@@ -1,9 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
+
+{%- set num_banner_imgs = 9 -%}
+
 <div class="photo-section">
     <!-- TODO 5: Add next and previous buttons for image change (buttons could appear on hover prev on the left and next on the right)-->
-    <!-- TODO 5: Find better way to set range end value than hard coding it -->
-    {% for i in range(end=9) -%}
+    {% for i in range(end=num_banner_imgs) -%}
     {% if i < 10 -%}
     {% set img_num = '0' ~ i | as_str -%}
     {% else -%}
