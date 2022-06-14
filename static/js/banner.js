@@ -11,6 +11,6 @@ function carousel() {
     myIndex = ++myIndex % x.length;
     x[myIndex].style.display = "block";
     if (x.length > 0) { // To prevent call back on pages with no images
-        setTimeout(carousel, 10000); // TODO 4: Move delay to file with configs
+        setTimeout(carousel, BANNER_TIMEOUT);
     }
 }

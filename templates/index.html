@@ -9,7 +9,7 @@
     {% else %}
     {% set img_num = i | as_str%}
     {% endif %}
-    {% set img_fn = 'NAPA' ~ img_num ~ '.jpg' %}
+    {% set img_fn = 'banner_imgs/NAPA' ~ img_num ~ '.jpg' %}
     {% set img = resize_image(path=img_fn, width=2400, height=1400, op="fill") -%}
     <img alt="banner image" class="mySlides fade" src="{{ img.url }}">
     <!-- TODO 3: Fix images taking more than height between header and footer when window is wider than it is tall
@@ -19,6 +19,6 @@
 
 {{ section.content | safe}}
 
-<script defer src="{{ get_url(path='js.js') | safe }}" type="text/javascript"></script>
+<script defer src="{{ get_url(path='js/banner.js') | safe }}" type="text/javascript"></script>
 
 {% endblock content %}
