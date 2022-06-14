@@ -52,16 +52,16 @@ header {
     background-color: $napaYellow;
     font-size: medium; // Set font-size to prevent to much empty space
     clear: both;
+    text-align: center;
 
     a {
       display: inline-block;
       position: relative;
       text-decoration: none;
       text-transform: uppercase;
-      text-align: center;
       color: $napaBlue;
       cursor: pointer;
-      padding: 1%;
+      padding: 1% 2%;
       font-weight: bold;
     }
 
