@@ -13,7 +13,7 @@
 <body>
 <header>
     <div>
-        <!-- TODO 4: Make logo resize with page (lower min org name size might also be possible once this is implemented-->
+        <!-- TODO 4: Make logo resize with page (lower min org name size might also be possible once this is implemented)-->
         <div class=" logo">
             <a href="{{ config.base_url | safe }}"><img id="logo_img" src="{{ get_url(path=config.extra.logo) }}"/></a>
         </div>
@@ -22,11 +22,10 @@
             <span id="org_type">Company</span>
         </div>
     </div>
-    <nav>
+    <nav> <!-- TODO 4: Try Menu in Center -->
         <!--TODO 4: Highlight current page in nav-->
-        <a href="{{ config.base_url | safe}}"><b>Home</b></a>
-        <a href="{{ get_url(path='contact-us') }}"><b>Contact Us</b></a>
-        <div class="animation start-home"></div>
+        <a href="{{ config.base_url | safe}}">Home</a>
+        <a href="{{ get_url(path='contact-us') }}">Contact Us</a>
     </nav>
     <!--TODO 4: Add Store (NAPA Online)-->
 </header>

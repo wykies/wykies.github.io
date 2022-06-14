@@ -62,41 +62,18 @@ header {
     font-size: 15px;
     display: inline-block;
     position: relative;
-    z-index: 101;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
     color: $napaBlue;
     cursor: pointer;
+    padding: 1%;
+    font-weight: bold;
   }
 
-  nav .animation {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    z-index: 100;
+  nav .active, nav a:hover {
+    background-color: $White;
     transition: all .5s ease 0s;
-  }
-
-  a:nth-child(1) {
-    width: 100px;
-  }
-
-  a:nth-child(2) {
-    width: 115px;
-  }
-
-
-  .active nav .start-home, a:nth-child(1):hover ~ .animation {
-    width: 100px;
-    left: 0;
-    background-color: $White;
-  }
-
-  .active nav .start-contactus, a:nth-child(2):hover ~ .animation {
-    width: 115px;
-    left: 100px;
-    background-color: $White;
   }
 }
 
