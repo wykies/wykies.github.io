@@ -52,23 +52,23 @@ header {
     background-color: $napaYellow;
     font-size: medium; // Set font-size to prevent to much empty space
     clear: both;
-  }
 
-  nav a {
-    display: inline-block;
-    position: relative;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    color: $napaBlue;
-    cursor: pointer;
-    padding: 1%;
-    font-weight: bold;
-  }
+    a {
+      display: inline-block;
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      color: $napaBlue;
+      cursor: pointer;
+      padding: 1%;
+      font-weight: bold;
+    }
 
-  nav .active, nav a:hover {
-    background-color: $White;
-    transition: all .5s ease 0s;
+    .active, a:hover {
+      background-color: $White;
+      transition: all .5s ease 0s;
+    }
   }
 }
 
