@@ -79,26 +79,8 @@ a:nth-child(2) {
 
 .mySlides {
   width: 100%;
-  position: center;
-
-}
-
-//For wider screens view
-@media screen and (max-height: 850px) {
-  .mySlides {
-    max-height: 425px;
-    max-width: 50%;
-    padding-left: 25%;
-  }
-
-}
-
-//For phone screen view
-@media screen and (max-width: 864px) {
-  .mySlides {
-    max-width: 100%;
-    padding: 0;
-  }
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .fade {
