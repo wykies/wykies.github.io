@@ -6,7 +6,7 @@ html, body, #content, .photo-section {
 }
 
 body {
-  font-size: 25px;
+  font-size: x-large;
   color: $White;
   font-family: $Font;
   background: $napaBlue;
@@ -54,12 +54,11 @@ header {
     padding: .20%;
     position: relative;
     background-color: $napaYellow;
-    font-size: 0; // TODO 5:Determine why font is set to 0
+    font-size: medium; // Set font-size to prevent to much empty space
     clear: both;
   }
 
   nav a {
-    font-size: 15px;
     display: inline-block;
     position: relative;
     text-decoration: none;
