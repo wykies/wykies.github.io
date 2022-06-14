@@ -1,107 +1,87 @@
 @import "variables";
 
-header {
-    position: sticky;
-    top: 0;
+// Set height on content and ancestors
+html, body, #content, .photo-section {
+  height: 100%;
 }
 
-#org_name {
-  padding: .5%;
-  background-color: $napaBlue;
-  margin: 0;
-  text-align: center;
-  font-size: 52px;
+body {
+  font-size: x-large;
   color: $White;
   font-family: $Font;
+  background: $napaBlue;
+  margin: 0;
 }
 
-#logoimg {
+header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background: $napaBlue;
+
+  #logo_img {
     float: left;
-    margin: 5px 0 0 5px;
+    margin: 1%;
     max-width: 100%;
-    height: auto;
-}
+  }
 
-@media screen and (max-width: 765px) {
-  #org_type {
-    display: none; // Remove the word company when there is not enough space
+
+  #org_name {
+    background-color: $napaBlue;
+    margin-top: 1%;
+    text-align: center;
+    font-size: 3vw;
+    color: $White;
+    font-family: $Font;
+  }
+
+  @media screen and (max-width: 1200px) {
+    #org_name {
+      font-size: 36px; // Set min font size for org_name
+    }
+  }
+
+  @media screen and (max-width: 765px) {
+    #org_type {
+      display: none; // Remove the word company when there is not enough space
+    }
+  }
+
+  nav {
+    position: relative;
+    background-color: $napaYellow;
+    font-size: medium; // Set font-size to prevent to much empty space
+    clear: both;
+  }
+
+  nav a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: $napaBlue;
+    cursor: pointer;
+    padding: 1%;
+    font-weight: bold;
+  }
+
+  nav .active, nav a:hover {
+    background-color: $White;
+    transition: all .5s ease 0s;
   }
 }
 
-nav {
-  overflow: auto;
-  padding: .20%;
-  position: relative;
-  background-color: $napaYellow;
-  font-size: 0; // TODO 5:Determine why font is set to 0
-}
-
-nav a {
-  font-size: 15px;
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  color: $napaBlue;
-  cursor: pointer;
-}
-
-nav .animation {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  z-index: 0;
-  transition: all .5s ease 0s;
-}
-
-a:nth-child(1) {
-  width: 100px;
-}
-
-a:nth-child(2) {
-  width: 115px;
-}
-
-
-.active nav .start-home, a:nth-child(1):hover ~ .animation {
-  width: 100px;
-  left: 0;
-  background-color: $White;
-}
-
-.active nav .start-contactus, a:nth-child(2):hover ~ .animation {
-  width: 115px;
-  left: 100px;
-  background-color: $White;
-}
-
 .mySlides {
-  width: 100%;
-  position: center;
-
-}
-//For wider screens view
-@media screen and (max-height: 850px){
-    .mySlides{
-        max-height:425px;
-        max-width:50%;
-        padding-left:25%;
-    }
-
-}
-//For phone screen view
-@media screen and (max-width: 864px) {
-    .mySlides{
-        max-width:100%;
-        padding: 0;
-    }
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 @keyframes fade {
@@ -114,93 +94,60 @@ a:nth-child(2) {
   }
 }
 
-h2 {
-  color: $White;
-  font: $Font
-}
-
 .table_ {
   box-sizing: border-box;
-  padding-left: 3.5%;
-}
-
-.container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 5%;
-}
-
-/* Then style the iframe to fit in the container div with full height and width */
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
 }
 
-/* Create three equal columns that floats next to each other */
-.column1 {
+.row {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Create three equal columns that float next to each other */
+.col {
   float: left;
-  width: 30%;
-  padding: 10px;
+  width: 32%;
+  height: 100%;
+  padding: 0.50%;
+}
+
+.col-color1 {
+  //background-color: $napaBlueDark;
   background-color: $napaBlueLight;
 }
 
-.column2 {
-  float: left;
-  width: 30%;
-  padding: 10px;
+.col-color2 {
   background-color: $napaBlue;
 }
 
-.column3 {
-  float: left;
-  width: 30%;
-  padding: 10px;
+.col-color3 {
   background-color: $napaBlueDark;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 864px) {
-  .column1 {
-    width: 100%;
-    height: 100%;
-  }
-  .column2 {
-    width: 100%;
-    height: 100%;
-  }
-  .column3 {
+  .col {
     width: 100%;
     height: 100%;
   }
 }
 
-
-body {
-  font-size: 25px;
-  color: $White;
-  font-family: $Font;
-  background: $napaBlue;
-  position: center;
-  margin :0;
+.map {
+  position: relative;
+  overflow: scroll;
+  width: 100%;
+  height: 45%;
+  padding-top: 5%;
 }
 
 footer {
   font-size: 12px;
   position: fixed;
-  padding: 3px 15px;
+  padding: 0.2% 0;
   left: 0;
   bottom: 0;
   width: 100%;
