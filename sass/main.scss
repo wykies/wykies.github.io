@@ -46,7 +46,7 @@ nav a {
   font-size: 15px;
   display: inline-block;
   position: relative;
-  z-index: 1;
+  z-index: 101;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
@@ -58,7 +58,7 @@ nav .animation {
   position: absolute;
   height: 100%;
   top: 0;
-  z-index: 0;
+  z-index: 100;
   transition: all .5s ease 0s;
 }
 
