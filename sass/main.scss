@@ -21,15 +21,14 @@ header {
 
   #logo_img {
     float: left;
-    margin: 8px;
+    margin: 1%;
     max-width: 100%;
   }
 
 
   #org_name {
-    padding: .5%;
     background-color: $napaBlue;
-    margin: 0;
+    margin-top: 1%;
     text-align: center;
     font-size: 3vw;
     color: $White;
@@ -49,8 +48,6 @@ header {
   }
 
   nav {
-    overflow: auto;
-    padding: .20%;
     position: relative;
     background-color: $napaYellow;
     font-size: medium; // Set font-size to prevent to much empty space
@@ -150,7 +147,7 @@ header {
 footer {
   font-size: 12px;
   position: fixed;
-  padding: 3px 15px;
+  padding: 0.2% 0;
   left: 0;
   bottom: 0;
   width: 100%;
