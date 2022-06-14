@@ -8,6 +8,7 @@
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
     <link href="{{ get_url(path='main.css') | safe }}" rel="stylesheet">
     <script src="{{ get_url(path='js/variables.js') | safe }}" type="text/javascript"></script>
+    <script src="{{ get_url(path='js/main.js') | safe }}" type="text/javascript"></script>
 </head>
 <body>
 <header>
@@ -32,7 +33,7 @@
     <!--TODO 4: Add Store (NAPA Online)-->
 </header>
 
-<div class="content">
+<div id="content">
     {% block content -%}
     {% endblock content %}
 </div>
