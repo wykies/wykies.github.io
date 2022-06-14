@@ -106,49 +106,41 @@ header {
 
 .table_ {
   box-sizing: border-box;
-  padding-left: 3.5%;
+  max-width: 100%;
+  height: 100%;
 }
 
-/* Create three equal columns that floats next to each other */
-.column1 {
+.row {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Create three equal columns that float next to each other */
+.col {
   float: left;
-  width: 30%;
-  padding: 10px;
+  width: 32%;
+  height: 100%;
+  padding: 0.50%;
+}
+
+.col-color1 {
+  //background-color: $napaBlueDark;
   background-color: $napaBlueLight;
 }
 
-.column2 {
-  float: left;
-  width: 30%;
-  padding: 10px;
+.col-color2 {
   background-color: $napaBlue;
 }
 
-.column3 {
-  float: left;
-  width: 30%;
-  padding: 10px;
+.col-color3 {
   background-color: $napaBlueDark;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 864px) {
-  .column1 {
-    width: 100%;
-    height: 100%;
-  }
-  .column2 {
-    width: 100%;
-    height: 100%;
-  }
-  .column3 {
+  .col {
     width: 100%;
     height: 100%;
   }
@@ -156,8 +148,9 @@ header {
 
 .map {
   position: relative;
-  overflow: hidden;
+  overflow: scroll;
   width: 100%;
+  height: 45%;
   padding-top: 5%;
 }
 
