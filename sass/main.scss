@@ -18,17 +18,17 @@ header {
   width: 100%;
   top: 0;
   background: $napaBlue;
+  padding-top: 1%;
 
   #logo_img {
     float: left;
-    margin: 1%;
+    margin: 0 1% 1% 1%;
     max-width: 100%;
   }
 
 
   #org_name {
     background-color: $napaBlue;
-    margin-top: 1%;
     text-align: center;
     font-size: 3vw;
     color: $brightText;
