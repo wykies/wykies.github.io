@@ -1,12 +1,18 @@
 let currImgIndex = -1;
-let carouselTimer;
+let timerCarousel;
 let carouselImgs;
 
 
-function carousel() {
+function advanceCarousel() {
     carouselImgs[currImgIndex].style.display = "none";
     currImgIndex = ++currImgIndex % carouselImgs.length;
     carouselImgs[currImgIndex].style.display = "block";
+}
+
+function onClickHandlerAdvance() {
+    clearInterval(timerCarousel);
+    advanceCarousel();
+    timerCarousel = setInterval(advanceCarousel, BANNER_TIMEOUT);
 }
 
 (function setupCarousel() {
@@ -22,6 +28,10 @@ function carousel() {
     }
 
     currImgIndex = carouselImgs.length - 1; // Initialize last image
-    carouselTimer = setInterval(carousel, BANNER_TIMEOUT);
-    carousel();
+    timerCarousel = setInterval(advanceCarousel, BANNER_TIMEOUT);
+    advanceCarousel();
+
+    // Set onclick handler to advance photo
+    let container = document.getElementById(IMGS_CONTAINER_ID);
+    container.onclick = onClickHandlerAdvance;
 })();
