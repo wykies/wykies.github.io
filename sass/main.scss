@@ -1,14 +1,14 @@
 @import "variables";
 
 // Set height on content and ancestors
-html, body, #content, .photo-section {
+html, body, #content, #photo-container {
   height: 100%;
 }
 
 body {
   font-size: x-large;
-  color: $White;
-  font-family: $Font;
+  color: $brightText;
+  font-family: $font;
   background: $napaBlue;
   margin: 0;
 }
@@ -18,21 +18,21 @@ header {
   width: 100%;
   top: 0;
   background: $napaBlue;
+  padding-top: 1%;
 
   #logo_img {
     float: left;
-    margin: 1%;
+    margin: 0 1% 1% 1%;
     max-width: 100%;
   }
 
 
   #org_name {
     background-color: $napaBlue;
-    margin-top: 1%;
     text-align: center;
     font-size: 3vw;
-    color: $White;
-    font-family: $Font;
+    color: $brightText;
+    font-family: $font;
   }
 
   @media screen and (max-width: 1200px) {
@@ -50,25 +50,31 @@ header {
   nav {
     position: relative;
     background-color: $napaYellow;
-    font-size: medium; // Set font-size to prevent to much empty space
+    font-size: x-large;
     clear: both;
-  }
-
-  nav a {
-    display: inline-block;
-    position: relative;
-    text-decoration: none;
-    text-transform: uppercase;
     text-align: center;
-    color: $napaBlue;
-    cursor: pointer;
-    padding: 1%;
-    font-weight: bold;
-  }
 
-  nav .active, nav a:hover {
-    background-color: $White;
-    transition: all .5s ease 0s;
+    a {
+      display: inline-block;
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $napaBlue;
+      cursor: pointer;
+      padding: 1% 2%;
+      font-weight: bold;
+    }
+
+    a:hover {
+      background-color: $navHighlight;
+      transition: all .5s ease 0s;
+    }
+
+    .active {
+      text-decoration: underline;
+      text-decoration-color: $navActive;
+      text-decoration-thickness: 0.25em;
+    }
   }
 }
 
@@ -112,7 +118,7 @@ header {
   float: left;
   width: 32%;
   height: 100%;
-  padding: 0.50%;
+  padding: 1% 0.50%;
 }
 
 .col-color1 {
@@ -138,7 +144,6 @@ header {
 
 .map {
   position: relative;
-  overflow: scroll;
   width: 100%;
   height: 45%;
   padding-top: 5%;
