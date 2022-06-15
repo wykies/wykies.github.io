@@ -143,9 +143,23 @@ header {
 
 .map {
   position: relative;
+  overflow: hidden;
   width: 100%;
   height: 45%;
   padding-top: 5%;
+}
+
+.map.minimized {
+  display: none;
+}
+
+@media screen and (max-height: 800px) {
+  .map.full {
+    display: none;
+  }
+  .map.minimized {
+    display: block;
+  }
 }
 
 footer {
