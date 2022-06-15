@@ -62,7 +62,6 @@ header {
       color: $napaBlue;
       cursor: pointer;
       padding: 1% 2%;
-      font-weight: bold;
     }
 
     a:hover {
@@ -73,7 +72,7 @@ header {
     .active {
       text-decoration: underline;
       text-decoration-color: $navActive;
-      text-decoration-thickness: 0.25em;
+      text-decoration-thickness: 0.1em;
     }
   }
 }
