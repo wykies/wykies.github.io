@@ -27,7 +27,7 @@
                 href="{{ config.base_url | safe}}"
                 {% if current_path== '/' %}class="active"{% endif %}
         >Home</a>
-        
+
         {% set section_ = get_section(path="_index.md") -%}
         {% for page_ in section_.pages -%}
         <a

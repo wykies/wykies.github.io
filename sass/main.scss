@@ -7,8 +7,8 @@ html, body, #content, .photo-section {
 
 body {
   font-size: x-large;
-  color: $White;
-  font-family: $Font;
+  color: $brightText;
+  font-family: $font;
   background: $napaBlue;
   margin: 0;
 }
@@ -31,8 +31,8 @@ header {
     margin-top: 1%;
     text-align: center;
     font-size: 3vw;
-    color: $White;
-    font-family: $Font;
+    color: $brightText;
+    font-family: $font;
   }
 
   @media screen and (max-width: 1200px) {
@@ -50,7 +50,7 @@ header {
   nav {
     position: relative;
     background-color: $napaYellow;
-    font-size: medium; // Set font-size to prevent to much empty space
+    font-size: x-large;
     clear: both;
     text-align: center;
 
@@ -65,9 +65,15 @@ header {
       font-weight: bold;
     }
 
-    .active, a:hover {
-      background-color: $White;
+    a:hover {
+      background-color: $navHighlight;
       transition: all .5s ease 0s;
+    }
+
+    .active {
+      text-decoration: underline;
+      text-decoration-color: $navActive;
+      text-decoration-thickness: 0.25em;
     }
   }
 }
