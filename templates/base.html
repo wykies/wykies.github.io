@@ -22,10 +22,21 @@
             <span id="org_type">Company</span>
         </div>
     </div>
-    <nav> <!-- TODO 4: Try Menu in Center -->
-        <!--TODO 4: Highlight current page in nav-->
-        <a href="{{ config.base_url | safe}}">Home</a>
-        <a href="{{ get_url(path='contact-us') }}">Contact Us</a>
+    <nav>
+        <a
+                href="{{ config.base_url | safe}}"
+                {% if current_path== '/' %}class="active"{% endif %}
+        >Home</a>
+        
+        {% set section_ = get_section(path="_index.md") -%}
+        {% for page_ in section_.pages -%}
+        <a
+                href="{{ page_.permalink | safe }}"
+                {% if current_path== page_.path %}class="active" {% endif %}
+        >{{ page_.title }}</a>
+
+
+        {% endfor -%}
     </nav>
     <!--TODO 4: Add Store (NAPA Online)-->
 </header>
