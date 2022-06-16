@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Exo");
 @import "variables";
 
 // Set height on content and ancestors
@@ -8,7 +9,7 @@ html, body, #content, #photo-container {
 body {
   font-size: x-large;
   color: $brightText;
-  font-family: $font;
+  font-family: $font_body;
   background: $napaBlue;
   margin: 0;
 }
@@ -18,30 +19,30 @@ header {
   width: 100%;
   top: 0;
   background: $napaBlue;
-  padding-top: 1%;
 
   #logo_img {
     float: left;
-    margin: 0 1% 1% 1%;
-    max-width: 100%;
+    padding: 1%;
+    width: 20%;
+    min-width: 150px;
   }
-
 
   #org_name {
     background-color: $napaBlue;
     text-align: center;
-    font-size: 3vw;
+    font-size: 3.5vw;
     color: $brightText;
-    font-family: $font;
+    font-family: $font_org_name;
+    padding: 1%;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 750px) {
     #org_name {
-      font-size: 36px; // Set min font size for org_name
+      font-size: 26px; // Set min font size for org_name
     }
   }
 
-  @media screen and (max-width: 765px) {
+  @media screen and (max-width: 660px) {
     #org_type {
       display: none; // Remove the word company when there is not enough space
     }
@@ -122,11 +123,11 @@ header {
 
 .col-color1 {
   //background-color: $napaBlueDark;
-  background-color: $napaBlueLight;
+  background-color: $napaBlueDark;
 }
 
 .col-color2 {
-  background-color: $napaBlue;
+  background-color: $napaBlueLight;
 }
 
 .col-color3 {
