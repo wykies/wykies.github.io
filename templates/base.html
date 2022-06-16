@@ -16,22 +16,22 @@
         <div class="logo_container">
             <a href="{{ config.base_url | safe }}"><img id="logo_img" src="{{ get_url(path=config.extra.logo) }}"/></a>
         </div>
-        <div id="org_name">
-            <span> Wykies&nbsp;Auto&nbsp;Co</span>
+        <h1 id="org_name">
+            <span>WYKIES&nbsp;AUTO&nbsp;CO</span>
             <span id="org_type"> - NAPA&nbsp;AUTO&nbsp;PARTS</span>
-        </div>
+        </h1>
     </div>
     <nav>
         <a
                 href="{{ config.base_url | safe}}"
-                {% if current_path== '/' %}class="active"{% endif %}
+                {% if current_path=='/' %}class="active" {% endif %}
         >Home</a>
 
         {% set section_ = get_section(path="_index.md") -%}
         {% for page_ in section_.pages -%}
         <a
                 href="{{ page_.permalink | safe }}"
-                {% if current_path== page_.path %}class="active" {% endif %}
+                {% if current_path==page_.path %}class="active" {% endif %}
         >{{ page_.title }}</a>
 
 
