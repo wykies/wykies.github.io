@@ -13,13 +13,12 @@
 <body>
 <header>
     <div>
-        <!-- TODO 4: Make logo resize with page (lower min org name size might also be possible once this is implemented)-->
-        <div class=" logo">
+        <div class="logo_container">
             <a href="{{ config.base_url | safe }}"><img id="logo_img" src="{{ get_url(path=config.extra.logo) }}"/></a>
         </div>
         <div id="org_name">
-            <span> Wykies&nbsp;Auto</span>
-            <span id="org_type">Company</span>
+            <span> Wykies&nbsp;Auto&nbsp;Co</span>
+            <span id="org_type"> - NAPA&nbsp;AUTO&nbsp;PARTS</span>
         </div>
     </div>
     <nav>
@@ -38,7 +37,7 @@
 
         {% endfor -%}
     </nav>
-    <!--TODO 4: Add Store (NAPA Online)-->
+    <!--TODO 5: Add Store (NAPA Online)-->
 </header>
 
 <div id="content">
