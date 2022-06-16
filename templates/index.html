@@ -12,9 +12,8 @@
     {% set img_num = i | as_str -%}
     {% endif -%}
     {% set img_fn = 'banner_imgs/NAPA' ~ img_num ~ '.jpg' -%}
-    {# {% set img = resize_image(path=img_fn, width=2400, height=1400, op="fill") -%} #}
-    <img alt="banner image{{img_num}}" class="mySlides fade" src="{{ img_fn | safe }}">
-    <!-- TODO 1: Restore resize-->
+    {% set img = resize_image(path=img_fn, width=2400, height=1600, op="fill") -%}
+    <img alt="banner image{{img_num}}" class="mySlides fade" src="{{ img.url }}">
     {% endfor -%}
 </div>
 
