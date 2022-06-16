@@ -19,15 +19,13 @@ header {
   width: 100%;
   top: 0;
   background: $napaBlue;
-  padding-top: 1%;
 
   #logo_img {
     float: left;
-    margin: 0 1% 1% 1%;
+    padding: 1%;
     width: 20%;
     min-width: 150px;
   }
-
 
   #org_name {
     background-color: $napaBlue;
@@ -35,6 +33,7 @@ header {
     font-size: 3.5vw;
     color: $brightText;
     font-family: $font_org_name;
+    padding: 1%;
   }
 
   @media screen and (max-width: 750px) {
