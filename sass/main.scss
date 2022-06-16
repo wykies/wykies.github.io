@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Exo");
 @import "variables";
 
 // Set height on content and ancestors
@@ -8,7 +9,7 @@ html, body, #content, #photo-container {
 body {
   font-size: x-large;
   color: $brightText;
-  font-family: $font;
+  font-family: $font_body;
   background: $napaBlue;
   margin: 0;
 }
@@ -33,7 +34,7 @@ header {
     text-align: center;
     font-size: 3.5vw;
     color: $brightText;
-    font-family: $font;
+    font-family: $font_org_name;
   }
 
   @media screen and (max-width: 750px) {
