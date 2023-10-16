@@ -14,7 +14,7 @@
 <header>
     <div>
         <div class="logo_container">
-            <a href="{{ config.base_url | safe }}"><img id="logo_img" src="{{ get_url(path=config.extra.logo) }}"/></a>
+            <a aria-label="logo, click to go to home" href="{{ config.base_url | safe }}"><img id="logo_img" alt="logo" src="{{ get_url(path=config.extra.logo) }}"/></a>
         </div>
         <div id="org_name">
             <span>Wykies&nbsp;Auto&nbsp;Co</span>
