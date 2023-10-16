@@ -16,7 +16,7 @@ jobs:
     if: github.ref != 'refs/heads/main' && github.ref != 'refs/heads/develop'
     steps:
       - name: Checkout main
-        uses: actions/checkout@v3.0.0
+        uses: actions/checkout@v4
       - name: Build only
         uses: wykies/zola-deploy-action@master
         env:
@@ -31,7 +31,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
     steps:
       - name: Checkout main
-        uses: actions/checkout@v3.0.0
+        uses: actions/checkout@v4
       - name: Build and deploy
         uses: wykies/zola-deploy-action@master
         env:
@@ -45,7 +45,7 @@ jobs:
     if: github.ref == 'refs/heads/develop'
     steps:
       - name: Checkout main
-        uses: actions/checkout@v3.0.0
+        uses: actions/checkout@v4
       - name: Build and deploy
         uses: wykies/zola-deploy-action@master
         env:
