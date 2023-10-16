@@ -19,4 +19,4 @@ jobs:
           PAGES_BRANCH: gh-pages-test
           REPOSITORY: wykies/web_test
           BUILD_FLAGS: --base-url https://wykies.github.io/web_test/
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
