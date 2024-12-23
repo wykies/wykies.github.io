@@ -3,9 +3,11 @@ let timerCarousel;
 let carouselImgs;
 
 function advanceCarousel() {
-  carouselImgs[currImgIndex].style.display = "none";
+  let adjCurrImgIndex = (currImgIndex % 2 === 0) ? 0 : currImgIndex;
+  carouselImgs[adjCurrImgIndex].style.display = "none";
   currImgIndex = ++currImgIndex % carouselImgs.length;
-  carouselImgs[currImgIndex].style.display = "block";
+  adjCurrImgIndex = (currImgIndex % 2 === 0) ? 0 : currImgIndex;
+  carouselImgs[adjCurrImgIndex].style.display = "block";
 }
 
 function onClickHandlerAdvance() {
