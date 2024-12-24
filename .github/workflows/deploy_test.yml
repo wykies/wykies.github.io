@@ -1,0 +1,22 @@
+name: Deploy Test
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build_and_deploy_test:
+    runs-on: ubuntu-latest    
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+      - name: Build and deploy
+        uses: wykies/zola-deploy-action@master
+        env:
+          OUT_DIR: docs
+          BUILD_DIR: .
+          PAGES_BRANCH: gh-pages-test
+          REPOSITORY: wykies/web_test
+          BUILD_FLAGS: --base-url https://wykies.github.io/web_test/
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
