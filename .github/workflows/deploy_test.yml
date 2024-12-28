@@ -1,5 +1,9 @@
 name: Deploy Test
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 on:
   pull_request:
     branches:
@@ -10,7 +14,9 @@ jobs:
     runs-on: ubuntu-latest    
     steps:
       - name: Checkout main
-        uses: actions/checkout@v4
+        uses: wykies/checkout@main
+        with:
+          submodules: recursive
       - name: Build and deploy
         uses: wykies/zola-deploy-action@master
         env:
