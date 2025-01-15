@@ -26,6 +26,9 @@
                 href="{{ config.base_url | safe}}"
                 {% if current_path=='/' %}class="active" {% endif %}
         >Home</a>
+        <a
+                href="https://www.napaonline.com/en/idm/roseau-dominica/store/24412"                
+        >Order Parts</a>
 
         {% set section_ = get_section(path="_index.md") -%}
         {% for page_ in section_.pages -%}
